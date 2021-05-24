@@ -19,7 +19,7 @@ mongoose.connect(connection_url,{
 })
 
 //Api EndPoints
-app.get('/*',(req,res) => {
+app.get('/',(req,res) => {
     res.status(200).send('hello Geeks!')
 })
 
