@@ -1,27 +1,21 @@
 {
   "name": "tinder-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "type": "module",
-  "scripts": 
-  {
+  "version": "0.0.0",
+  "scripts": {
     "ng": "ng",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js",
+    "start": "node server.js",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
     "heroku-postbuild": "ng build --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "~4.2.3"
   },
   "engines": {
     "node": "14.17.0",
     "npm": "6.14.3"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": 
-  {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.10",
-    "nodemon": "^2.0.7"
   }
 }
