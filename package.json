@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": 
   {
+    "ng": "ng",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "server.js",
     "heroku-postbuild": "ng build --prod"
